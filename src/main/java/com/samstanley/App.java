@@ -1,13 +1,11 @@
 package com.samstanley;
 
-/**
- * Hello world!
- *
- */
-public class App
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import com.samstanley.logic.FileSystemWrapper;
+
+public class App {
+    public static void main(String[] args) {
+        FileSystemWrapper
+            .getInstance()
+            .runFileSystemREPL();
     }
 }
