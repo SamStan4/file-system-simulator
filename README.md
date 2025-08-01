@@ -1,6 +1,26 @@
 # file-system-simulator
 
-## Maven generation
+## Commands N' Stuff
+
+### Building the project
+
+```bash
+mvn compile
+```
+
+### Executing the Project (make sure to build first)
+
+```bash
+mvn exec:java -Dexec.mainClass="com.samstanley.App"
+```
+
+### Cleaning the Project
+
+```bash
+mvn clean
+```
+
+### Maven Generation
 
 ```bash
 mvn archetype:generate \
