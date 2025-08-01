@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 public class UserInputExecutorTest {
   
   /**
-   * @brief Tests that the get instance static method works for the FileSystemWrapper class.
+   * @brief Tests that the get instance static method works for the UserInputExecutor class.
    */
   @Test
   @DisplayName("UserInputExecutor.getInstance test 01")
@@ -27,7 +27,7 @@ public class UserInputExecutorTest {
    *        (memory space) over multiple calls to UserInputExecutor.getInstance().
    */
   @Test
-  @DisplayName("FileSystemWrapper.getInstance test 02")
+  @DisplayName("UserInputExecutor.getInstance test 02")
   public void getInstanceTest02() {
     final UserInputExecutor instance1 = UserInputExecutor.getInstance();
     final UserInputExecutor instance2 = UserInputExecutor.getInstance();
