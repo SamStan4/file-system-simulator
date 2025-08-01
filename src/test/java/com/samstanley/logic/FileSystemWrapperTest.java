@@ -1,5 +1,6 @@
 package com.samstanley.logic;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertSame;
 
@@ -31,8 +32,13 @@ public class FileSystemWrapperTest {
     final FileSystemWrapper instance1 = FileSystemWrapper.getInstance();
     final FileSystemWrapper instance2 = FileSystemWrapper.getInstance();
     final FileSystemWrapper instance3 = FileSystemWrapper.getInstance();
+
     assertSame(instance1, instance2);
     assertSame(instance2, instance3);
     assertSame(instance1, instance3);
+
+    assertEquals(instance1.hashCode(), instance2.hashCode());
+    assertEquals(instance2.hashCode(), instance3.hashCode());
+    assertEquals(instance1.hashCode(), instance3.hashCode());
   }
 }
