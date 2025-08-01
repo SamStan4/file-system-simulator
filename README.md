@@ -11,7 +11,7 @@ mvn compile
 ### Executing the Project (make sure to build first)
 
 ```bash
-mvn exec:java -Dexec.mainClass="com.samstanley.App"
+mvn exec:java
 ```
 
 ### Cleaning the Project
